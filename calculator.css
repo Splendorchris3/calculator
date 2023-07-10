@@ -1,0 +1,148 @@
+ * {
+ padding: 0%;
+  margin: 0%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e7e7e7;
+}
+
+.calculator {
+  height: 90vh;
+  width: 30vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 30px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  height: 0vh;
+  width: 30vw;
+  overflow-y: hidden;
+  position: absolute;
+  border-radius: 30px;
+  background-color: #36474f;
+  transition: 0.5s;
+}
+
+.close {
+  position: absolute;
+  width: 30vw;
+}
+
+.history div {
+  margin: 10px;
+  color: white;
+}
+
+.history button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: #e7e7e7;
+  background: none;
+  border: none;
+}
+
+.calSpace {
+  height: 30vh;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #36474f;
+  color: #f2f6f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px;
+  align-items: center;
+}
+
+.evaluate {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.line {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calButtons {
+  height: 60vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #18212a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.calButtons div {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.special {
+  width: 50px;
+  height: 50px;
+  background: #e7e7e7 !important;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.831) !important;
+}
+
+.equal {
+  background: #ff6531 !important;
+  color: white !important;
+}
+
+.calButtons button {
+  color: #f2f6f7;
+  font-size: 25px;
+  background: none;
+  border: none;
+}
+
+.calButtons button:hover {
+  width: 50px;
+  height: 50px;
+  background: #0d0c0c55;
+  border-radius: 50%;
+}
+
+#result {
+  margin-top: 15px;
+}
+
+.modal {
+  position: absolute;
+  background-color: #e7e7e7;
+  color: #18212a;
+  padding: 10px 20px;
+  line-height: 40px;
+  margin-left: -120px;
+  display: none;
+}
+
+.modal p {
+  cursor: pointer;
+}
+
+.modal p:hover {
+  color: black;
+}

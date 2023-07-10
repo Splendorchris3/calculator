@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="history">
+          <button onclick="clearHistory()">
+            <i class="bi bi-trash"></i> Clear
+          </button>
+          <div class="line close" onclick="closeHistory()">__</div>
+          <div id="calHis"></div>
+        </div>
+        <div class="calSpace">
+          <div class="nav">
+            <h2 id="calculator">Calculator</h2>
+            <div>
+              <div class="modal">
+                <p onclick="lightMode()">Light Mode</p>
+                <p onclick="darkMode()">Dark Mode</p>
+              </div>
+              <i onclick="displayModal()" class="bi bi-three-dots-vertical"></i>
+            </div>
+          </div>
+          <div class="evaluate">
+            <h3 id="evaluate"></h3>
+            <h3 id="result"></h3>
+          </div>
+          <div class="line" onclick="displayHistory()">__</div>
+        </div>
+        <div class="calButtons">
+          <div><button onclick="returnToZero()">AC</button></div>
+          <div>
+            <button onclick="del()"><i class="bi bi-backspace"></i></button>
+          </div>
+          <div><button onclick="display('%')">%</button></div>
+          <div><button onclick="display('/')" class="special">/</button></div>
+          <div><button onclick="display('7')">7</button></div>
+          <div><button onclick="display('8')">8</button></div>
+          <div><button onclick="display('9')">9</button></div>
+          <div><button onclick="display('*')" class="special">x</button></div>
+          <div><button onclick="display('4')">4</button></div>
+          <div><button onclick="display('5')">5</button></div>
+          <div><button onclick="display('6')">6</button></div>
+          <div><button onclick="display('-')" class="special">-</button></div>
+          <div><button onclick="display('1')">1</button></div>
+          <div><button onclick="display('2')">2</button></div>
+          <div><button onclick="display('3')">3</button></div>
+          <div><button onclick="display('+')" class="special">+</button></div>
+          <div>
+            <button><i class="bi bi-recycle"></i></button>
+          </div>
+          <div><button onclick="display('0')">0</button></div>
+          <div><button onclick="display('.')">.</button></div>
+          <div>
+            <button class="special equal" onclick="displayResult()">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="calculator.js"></script>
+  </body>
+</html>
