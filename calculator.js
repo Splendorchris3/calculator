@@ -52,6 +52,7 @@ function darkMode() {
   calSpace.style.background = "#36474f";
   calSpace.style.color = "#f2f6f7";
   calButtons.style.background = "#18212a";
+  history.style.background = "#36474f";
   for (const button of buttons) {
     button.style.color = "#f2f6f7";
   }
@@ -61,6 +62,7 @@ function lightMode() {
   calSpace.style.background = "#ffffff";
   calSpace.style.color = "#273238";
   calButtons.style.background = "#f3f3f3";
+   history.style.background = "grey";
   for (const button of buttons) {
     button.style.color = "#3c3c3c";
   }

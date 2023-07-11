@@ -146,3 +146,22 @@ main {
 .modal p:hover {
   color: black;
 }
+
+
+
+@media screen and (max-width: 700px) { 
+  .calculator {
+    width: 80vw;
+  }
+
+  .history {
+width: 80vw;
+  }
+.close {
+  position: absolute;
+  width: 80vw;
+}
+
+
+
+}
